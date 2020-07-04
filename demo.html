@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./jQuery 3.5.1.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		console.log("dada");
+    	})
+    </script>
+<style type="text/css" mce_bogus="1">
+ body {
+	font: normal 11px auto "trebuchet ms", verdana, arial, helvetica, sans-serif;
+	color: #4f6b72;
+	background: #e6eae9;
+}
+a {
+	color: #c75f3e;
+}
+#mytable {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+}
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;
+	font: italic 11px "trebuchet ms", verdana, arial, helvetica, sans-serif;
+	text-align: right;
+}
+th {
+	font: bold 11px "trebuchet ms", verdana, arial, helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #c1dad7;
+	border-bottom: 1px solid #c1dad7;
+	border-top: 1px solid #c1dad7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #cae8ea url(images/bg_header.jpg) no-repeat;
+}
+td {
+	border-right: 1px solid #c1dad7;
+	border-bottom: 1px solid #c1dad7;
+	background: #fff;
+	font-size:11px;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+td.alt {
+	background: #f5fafa;
+	color: #797268;
+}
+th.spec {
+	border-left: 1px solid #c1dad7;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "trebuchet ms", verdana, arial, helvetica, sans-serif;
+}
+th.specalt {
+	border-left: 1px solid #c1dad7;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "trebuchet ms", verdana, arial, helvetica, sans-serif;
+	color: #797268;
+} /*-----for ie 5.x bug*/
+html>body td {
+	font-size:11px;
+}</style>
+</head>
+<body>
+<table id="mytable" cellspacing="0" summary="the technical specifications of the apple powermac g5 series">
+  <caption>
+  </caption>
+  <tr>
+    <th scope="col" abbr="configurations">configurations</th>
+    <th scope="col" abbr="dual 1.8">dual 1.8ghz</th>
+    <th scope="col" abbr="dual 2">dual 2ghz</th>
+    <th scope="col" abbr="dual 2.5">dual 2.5ghz</th>
+  </tr>
+  <tr>
+    <th scope="row" abbr="model" class="spec">lipeng</th>
+    <td>m9454ll/a</td>
+    <td>m9455ll/a</td>
+    <td>m9457ll/a</td>
+  </tr>
+  <tr>
+    <th scope="row" abbr="g5 processor" class="specalt">mapabc</th>
+    <td class="alt">dual 1.8ghz powerpc g5</td>
+    <td class="alt">dual 2ghz powerpc g5</td>
+    <td class="alt">dual 2.5ghz powerpc g5</td>
+  </tr>
+  <tr>
+    <th scope="row" abbr="frontside bus" class="spec">mass</th>
+    <td>900mhz per processor</td>
+    <td>1ghz per processor</td>
+    <td>1.25ghz per processor</td>
+  </tr>
+  <tr>
+    <th scope="row" abbr="l2 cache" class="specalt">2</th>
+    <td class="alt">512k per processor</td>
+    <td class="alt">512k per processor</td>
+    <td class="alt">512k per processor</td>
+  </tr>
+</table>
+</body>
+</html>
