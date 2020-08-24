@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./jQuery 3.5.1.js"></script>
+<script language="JavaScript">
+		function mousedown(event) {
+			var e = window.event;
+			var obj = e.srcElement;
+			obj.style.color = 'red';
+		}
+ 
+		function mouseup(event) {
+			var e = window.event;
+			var obj = e.srcElement;
+			obj.style.color = 'blue';
+		}
+	</script>
+ 
+	<body>
+		<p id="p1" style="color: green;" onmousedown="mousedown()" onmouseup="mouseup()">编程辞典网</p>
+	</body>
+
+</html>
